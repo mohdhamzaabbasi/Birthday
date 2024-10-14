@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy 18th Birthday!</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fce4ec;
+      text-align: center;
+    }
+    h1 {
+      margin-top: 20px;
+      font-size: 48px;
+      color: #d81b60;
+    }
+    .slideshow-container {
+      position: relative;
+      max-width: 80%;
+      margin: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .slides {
+      display: none;
+      position: relative;
+    }
+    .slides img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+    .message {
+      font-size: 20px;
+      color: #880e4f;
+      margin-top: 15px;
+    }
+    .prev, .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      padding: 16px;
+      color: #fce4ec;
+      background-color: #d81b60;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+    }
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+    .prev {
+      left: 0;
+      border-radius: 3px 0 0 3px;
+    }
+    .dots-container {
+      text-align: center;
+      margin-top: 20px;
+    }
+    .dot {
+      cursor: pointer;
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+    }
+    .active, .dot:hover {
+      background-color: #d81b60;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Happy 18th Birthday, Mohd Humam Abbasi!</h1>
+
+  <!-- Slideshow Container -->
+  <div class="slideshow-container">
+    <div class="slides">
+      <img src="year0.jpg" alt="Year 1">
+      <div class="message">"Birth: We thought its a cute baby but...!"</div>
+    </div>
+
+    <div class="slides">
+        <img src="year1.jpg" alt="Year 1">
+        <div class="message">"Year 1: You were still kinda cute!"</div>
+      </div>
+
+    <div class="slides">
+      <img src="year2.jpg" alt="Year 2">
+      <div class="message">"Year 2: You took your first steps, and here it all started!"</div>
+    </div>
+
+    <div class="slides">
+      <img src="year3.jpg" alt="Year 3">
+      <div class="message">"Year 3: It was when the fights began."</div>
+    </div>
+
+    <div class="slides">
+        <img src="year4.jpg" alt="Year 4">
+        <div class="message">"Year 4: I overpowered you!"</div>
+      </div>
+  
+      <div class="slides">
+        <img src="year5.jpg" alt="Year 5">
+        <div class="message">"Year 5: Kind by face(Just Face)!"</div>
+      </div>
+  
+      <div class="slides">
+        <img src="year6.jpg" alt="Year 6">
+        <div class="message">"Year 6: You started to overpower me!"</div>
+      </div>
+  
+      <div class="slides">
+        <img src="year7.png" alt="Year 7">
+        <div class="message">"Year 7: Smartyyy."</div>
+      </div>
+  
+      <div class="slides">
+        <img src="year8.png" alt="Year 8">
+        <div class="message">"Year 8: Innocense at peak."</div>
+      </div>
+  
+      <div class="slides">
+        <img src="year9.jpg" alt="Year 9">
+        <div class="message">"Year 9: Remember the fights?!"</div>
+      </div>
+  
+      <div class="slides">
+        <img src="year10.jpg" alt="Year 10">
+        <div class="message">"Year 10: Happy Happy Happy!!!."</div>
+      </div>
+  
+      <div class="slides">
+        <img src="year11.jpg" alt="Year 11">
+        <div class="message">"Year 11: Humam in pose."</div>
+      </div>
+  
+      <div class="slides">
+        <img src="year12.jpg" alt="Year 12">
+        <div class="message">"Year 12: Ye red check shirt meri thi waise."</div>
+      </div>
+  
+      <div class="slides">
+        <img src="year13.jpg" alt="Year 13">
+        <div class="message">"Year 13: Victory Victory!"</div>
+      </div>
+  
+      <div class="slides">
+        <img src="year14.jpg" alt="Year 14">
+        <div class="message">"Year 14: Still smart!"</div>
+      </div>
+  
+      <div class="slides">
+        <img src="year15.jpg" alt="Year 15">
+        <div class="message">"Year 15: Rajgaddi ke haqdaar."</div>
+      </div>
+  
+      <div class="slides">
+        <img src="year16.jpg" alt="Year 16">
+        <div class="message">"Year 16: Anger Issues!"</div>
+      </div>
+  
+      <div class="slides">
+        <img src="year17.jpg" alt="Year 17">
+        <div class="message">"Year 17: More Anger Issues! (hehe)"</div>
+      </div>
+  
+      <div class="slides">
+        <img src="year18.jpg" alt="Year 18">
+        <div class="message">"Year 18: Now you're officially an adult! Happiest Birthday Bhai. Love You!!"</div>
+      </div>
+
+      <div class="slides">
+        <img src="year19.png" alt="Year 18">
+        <div class="message">"Nikallo ab...birthday khatam!!"</div>
+      </div>
+
+    <!-- Navigation Buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+
+  <!-- Dots/Indicators -->
+  <div class="dots-container">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <!-- Add dots for the remaining 15 slides -->
+    <span class="dot" onclick="currentSlide(18)"></span>
+  </div>
+
+  <script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("slides");
+      let dots = document.getElementsByClassName("dot");
+      if (n > slides.length) { slideIndex = 1 }
+      if (n < 1) { slideIndex = slides.length }
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " active";
+    }
+  </script>
+
+</body>
+</html>
